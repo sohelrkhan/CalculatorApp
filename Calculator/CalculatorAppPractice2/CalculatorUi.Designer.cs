@@ -42,9 +42,10 @@
             // 
             // DivideButton
             // 
-            this.DivideButton.Location = new System.Drawing.Point(265, 125);
+            this.DivideButton.Location = new System.Drawing.Point(353, 154);
+            this.DivideButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DivideButton.Name = "DivideButton";
-            this.DivideButton.Size = new System.Drawing.Size(75, 23);
+            this.DivideButton.Size = new System.Drawing.Size(100, 28);
             this.DivideButton.TabIndex = 16;
             this.DivideButton.Text = "Divide";
             this.DivideButton.UseVisualStyleBackColor = true;
@@ -52,9 +53,10 @@
             // 
             // MultiplyButton
             // 
-            this.MultiplyButton.Location = new System.Drawing.Point(185, 125);
+            this.MultiplyButton.Location = new System.Drawing.Point(247, 154);
+            this.MultiplyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MultiplyButton.Name = "MultiplyButton";
-            this.MultiplyButton.Size = new System.Drawing.Size(75, 23);
+            this.MultiplyButton.Size = new System.Drawing.Size(100, 28);
             this.MultiplyButton.TabIndex = 17;
             this.MultiplyButton.Text = "Multiply";
             this.MultiplyButton.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // 
             // SubtractButton
             // 
-            this.SubtractButton.Location = new System.Drawing.Point(107, 125);
+            this.SubtractButton.Location = new System.Drawing.Point(143, 154);
+            this.SubtractButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SubtractButton.Name = "SubtractButton";
-            this.SubtractButton.Size = new System.Drawing.Size(75, 23);
+            this.SubtractButton.Size = new System.Drawing.Size(100, 28);
             this.SubtractButton.TabIndex = 18;
             this.SubtractButton.Text = "Subtract";
             this.SubtractButton.UseVisualStyleBackColor = true;
@@ -72,9 +75,10 @@
             // 
             // AddButton
             // 
-            this.AddButton.Location = new System.Drawing.Point(27, 125);
+            this.AddButton.Location = new System.Drawing.Point(36, 154);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(75, 23);
+            this.AddButton.Size = new System.Drawing.Size(100, 28);
             this.AddButton.TabIndex = 19;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
@@ -82,57 +86,66 @@
             // 
             // resultTextBox
             // 
-            this.resultTextBox.Location = new System.Drawing.Point(138, 84);
+            this.resultTextBox.Location = new System.Drawing.Point(184, 103);
+            this.resultTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.resultTextBox.Name = "resultTextBox";
-            this.resultTextBox.Size = new System.Drawing.Size(183, 20);
+            this.resultTextBox.ReadOnly = true;
+            this.resultTextBox.Size = new System.Drawing.Size(243, 22);
             this.resultTextBox.TabIndex = 13;
             // 
             // secondNumberTextBox
             // 
-            this.secondNumberTextBox.Location = new System.Drawing.Point(138, 59);
+            this.secondNumberTextBox.Location = new System.Drawing.Point(184, 73);
+            this.secondNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.secondNumberTextBox.Name = "secondNumberTextBox";
-            this.secondNumberTextBox.Size = new System.Drawing.Size(183, 20);
+            this.secondNumberTextBox.Size = new System.Drawing.Size(243, 22);
             this.secondNumberTextBox.TabIndex = 14;
+            this.secondNumberTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberInput);
             // 
             // firstNumberTextBox
             // 
-            this.firstNumberTextBox.Location = new System.Drawing.Point(138, 30);
+            this.firstNumberTextBox.Location = new System.Drawing.Point(184, 37);
+            this.firstNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNumberTextBox.Name = "firstNumberTextBox";
-            this.firstNumberTextBox.Size = new System.Drawing.Size(183, 20);
+            this.firstNumberTextBox.Size = new System.Drawing.Size(243, 22);
             this.firstNumberTextBox.TabIndex = 15;
+            this.firstNumberTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberInput);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 87);
+            this.label3.Location = new System.Drawing.Point(71, 107);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "Result";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 62);
+            this.label2.Location = new System.Drawing.Point(71, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(110, 17);
             this.label2.TabIndex = 11;
             this.label2.Text = "Second Number";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 33);
+            this.label1.Location = new System.Drawing.Point(71, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(89, 17);
             this.label1.TabIndex = 12;
             this.label1.Text = "First Number";
             // 
             // CalculatorUi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 189);
+            this.ClientSize = new System.Drawing.Size(507, 233);
             this.Controls.Add(this.DivideButton);
             this.Controls.Add(this.MultiplyButton);
             this.Controls.Add(this.SubtractButton);
@@ -143,6 +156,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CalculatorUi";
             this.Text = "Calculator";
             this.ResumeLayout(false);

@@ -60,9 +60,12 @@ namespace CalculatorAppPractice2
             _calculator.secondnumber = Convert.ToDouble(secondNumberTextBox.Text);
             resultTextBox.Text = _calculator.division().ToString();
             firstNumberTextBox.Clear();
-            secondNumberTextBox.Clear();
-           
+            secondNumberTextBox.Clear(); 
+        }
 
+        private void numberInput(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }
